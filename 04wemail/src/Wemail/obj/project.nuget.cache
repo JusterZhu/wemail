@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "JxgnwcA8ejl7/R00ZaR5ankk7NV7DSeX223OTKnTYzSHmamflF4rutXyZ8+wOtgDzDEGdgzbw739z9gADeoq6A==",
+  "dgSpecHash": "uJZGNQF8RuT/Mh4EhHfngcw+hV3Dq7LW0XHbj/4MQHcdf5BcF9tveCaLWXUmmuTkNDQfAfWXVnHrPsD/OPyG1Q==",
   "success": true,
   "projectFilePath": "F:\\博客相关资料\\文章\\wemail\\wemail\\04wemail\\src\\Wemail\\Wemail.csproj",
   "expectedPackageFiles": [
@@ -18,7 +18,8 @@
     "C:\\Users\\Administrator\\.nuget\\packages\\system.reflection.primitives\\4.3.0\\system.reflection.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\system.text.encoding\\4.3.0\\system.text.encoding.4.3.0.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512"
+    "C:\\Users\\Administrator\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.9\\microsoft.netcore.app.host.win-x64.5.0.9.nupkg.sha512"
   ],
   "logs": []
 }

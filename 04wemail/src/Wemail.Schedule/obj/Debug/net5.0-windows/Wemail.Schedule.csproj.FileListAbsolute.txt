@@ -14,3 +14,4 @@ F:\博客相关资料\文章\wemail\wemail\04wemail\src\Wemail.Schedule\obj\Debu
 F:\博客相关资料\文章\wemail\wemail\04wemail\src\Wemail.Schedule\obj\Debug\net5.0-windows\Wemail.Schedule.dll
 F:\博客相关资料\文章\wemail\wemail\04wemail\src\Wemail.Schedule\obj\Debug\net5.0-windows\ref\Wemail.Schedule.dll
 F:\博客相关资料\文章\wemail\wemail\04wemail\src\Wemail.Schedule\obj\Debug\net5.0-windows\Wemail.Schedule.pdb
+F:\博客相关资料\文章\wemail\wemail\04wemail\src\Wemail.Schedule\obj\Debug\net5.0-windows\Wemail.Schedule.csproj.AssemblyReference.cache
