@@ -1,0 +1,51 @@
+﻿<Window
+    x:Class="Wemail.Views.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:prism="http://prismlibrary.com/"
+    Title="{Binding Title}"
+    Width="1024"  
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+    Background="{DynamicResource MaterialDesignPaper}"
+    xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+    TextElement.FontWeight="Medium"
+    TextElement.FontSize="14"
+    FontFamily="pack://application:,,,/MaterialDesignThemes.Wpf;component/Resources/Roboto/#Roboto"
+    Height="768" 
+    prism:ViewModelLocator.AutoWireViewModel="True">
+    <Window.Resources>
+        <ResourceDictionary>
+            <Style x:Key="ModuleItemSytle" TargetType="ListBoxItem">
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate>
+                            <Grid>
+                                <TextBlock Text="{Binding ModuleName}"></TextBlock>
+                            </Grid>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+           
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="8*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <ListBox Grid.Row="1" ItemsSource="{Binding Modules}" SelectedItem="{Binding ModuleInfo}" ItemContainerStyle="{StaticResource ModuleItemSytle}"  />
+        <ContentControl Grid.Row="1" Grid.Column="1" prism:RegionManager.RegionName="ContentRegion"/>
+        <StackPanel Grid.Column="1" Orientation="Horizontal">
+            <Button Width="150" Height="30" Content="OpenA" Command="{Binding OpenViewA}"></Button>
+            <Button Width="150" Height="30" Content="OpenB" Command="{Binding OpenViewB}"></Button>
+            <Button Width="150" Height="30" Content="GoBack" Command="{Binding GoBackView}"></Button>
+            <Button Width="150" Height="30" Content="GoForward" Command="{Binding GoForwardView}"></Button>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -74,8 +74,6 @@ namespace Wemail.ViewModels
 
         public MainWindowViewModel(IRegionManager regionManager, IModuleCatalog moduleCatalog)
         {
-            regionManager.RegisterViewWithRegion("ContentRegion", typeof(TempViewA));
-            regionManager.RegisterViewWithRegion("ContentRegion", typeof(TempViewB));
             _regionManager = regionManager;
             _moduleCatalog = moduleCatalog;
         }

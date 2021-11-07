@@ -25,6 +25,8 @@ namespace Wemail
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
             //注册服务、依赖、View
+            containerRegistry.RegisterForNavigation<TempViewA>();
+            containerRegistry.RegisterForNavigation<TempViewB>();
         }
 
         /// <summary>

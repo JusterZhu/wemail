@@ -10,8 +10,6 @@ namespace Wemail.ViewModels
 {
     public class TempViewAViewModel : IConfirmNavigationRequest
     {
-        public bool KeepAlive => true;
-
         public void ConfirmNavigationRequest(NavigationContext navigationContext, Action<bool> continuationCallback)
         {
             bool result = true;
