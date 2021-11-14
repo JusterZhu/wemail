@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="Wemail.Controls.Views.MessageDialogView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+             Background="{DynamicResource MaterialDesignPaper}"
+             xmlns:local="clr-namespace:Wemail.Controls.Views"
+             mc:Ignorable="d" 
+             Height="450" Width="500">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBox Grid.Row="1" Background="Transparent" Foreground="White" Text="{Binding MessageContent,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"></TextBox>
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button Width="100" Height="30" Margin="5" Content="确定" Command="{Binding GetMessageCommand}"></Button>
+            <Button Width="100" Height="30" Margin="5" Content="取消" Command="{Binding CancelMessageCommand}"></Button>
+        </StackPanel>
+    </Grid>
+</UserControl>
