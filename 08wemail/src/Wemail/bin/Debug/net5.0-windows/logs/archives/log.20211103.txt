@@ -1,0 +1,2 @@
+2021-11-03 23:02:21.9448|Info|36|Wemail.App|日志测试|
+2021-11-03 23:03:13.7069|Info|78|Wemail.ViewModels.MainWindowViewModel|hhhhhhh|
