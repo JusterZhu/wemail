@@ -1,0 +1,13 @@
+F:\博客相关资料\文章\wemail\wemail\09wemail\src\Wemail.Resource\bin\Debug\net5.0-windows\Wemail.Resource.deps.json
+F:\博客相关资料\文章\wemail\wemail\09wemail\src\Wemail.Resource\bin\Debug\net5.0-windows\Wemail.Resource.dll
+F:\博客相关资料\文章\wemail\wemail\09wemail\src\Wemail.Resource\bin\Debug\net5.0-windows\ref\Wemail.Resource.dll
+F:\博客相关资料\文章\wemail\wemail\09wemail\src\Wemail.Resource\bin\Debug\net5.0-windows\Wemail.Resource.pdb
+F:\博客相关资料\文章\wemail\wemail\09wemail\src\Wemail.Resource\obj\Debug\net5.0-windows\Wemail.Resource.g.resources
+F:\博客相关资料\文章\wemail\wemail\09wemail\src\Wemail.Resource\obj\Debug\net5.0-windows\Wemail.Resource.GeneratedMSBuildEditorConfig.editorconfig
+F:\博客相关资料\文章\wemail\wemail\09wemail\src\Wemail.Resource\obj\Debug\net5.0-windows\Wemail.Resource.AssemblyInfoInputs.cache
+F:\博客相关资料\文章\wemail\wemail\09wemail\src\Wemail.Resource\obj\Debug\net5.0-windows\Wemail.Resource.AssemblyInfo.cs
+F:\博客相关资料\文章\wemail\wemail\09wemail\src\Wemail.Resource\obj\Debug\net5.0-windows\Wemail.Resource.csproj.CoreCompileInputs.cache
+F:\博客相关资料\文章\wemail\wemail\09wemail\src\Wemail.Resource\obj\Debug\net5.0-windows\Wemail.Resource.dll
+F:\博客相关资料\文章\wemail\wemail\09wemail\src\Wemail.Resource\obj\Debug\net5.0-windows\ref\Wemail.Resource.dll
+F:\博客相关资料\文章\wemail\wemail\09wemail\src\Wemail.Resource\obj\Debug\net5.0-windows\Wemail.Resource.pdb
+F:\博客相关资料\文章\wemail\wemail\09wemail\src\Wemail.Resource\obj\Debug\net5.0-windows\Wemail.Resource.csproj.AssemblyReference.cache

@@ -1,0 +1,152 @@
+{
+  "format": 1,
+  "restore": {
+    "F:\\博客相关资料\\文章\\wemail\\wemail\\09wemail\\src\\Wemail.Contact\\Wemail.Contact.csproj": {}
+  },
+  "projects": {
+    "F:\\博客相关资料\\文章\\wemail\\wemail\\09wemail\\src\\Wemail.Common\\Wemail.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\博客相关资料\\文章\\wemail\\wemail\\09wemail\\src\\Wemail.Common\\Wemail.Common.csproj",
+        "projectName": "Wemail.Common",
+        "projectPath": "F:\\博客相关资料\\文章\\wemail\\wemail\\09wemail\\src\\Wemail.Common\\Wemail.Common.csproj",
+        "packagesPath": "C:\\Users\\zhuzh\\.nuget\\packages\\",
+        "outputPath": "F:\\博客相关资料\\文章\\wemail\\wemail\\09wemail\\src\\Wemail.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "e:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\zhuzh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0-windows7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0-windows7.0": {
+            "targetAlias": "net5.0-windows",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0-windows7.0": {
+          "targetAlias": "net5.0-windows",
+          "dependencies": {
+            "Prism.Wpf": {
+              "target": "Package",
+              "version": "[8.0.0.1909, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\博客相关资料\\文章\\wemail\\wemail\\09wemail\\src\\Wemail.Contact\\Wemail.Contact.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\博客相关资料\\文章\\wemail\\wemail\\09wemail\\src\\Wemail.Contact\\Wemail.Contact.csproj",
+        "projectName": "Wemail.Contact",
+        "projectPath": "F:\\博客相关资料\\文章\\wemail\\wemail\\09wemail\\src\\Wemail.Contact\\Wemail.Contact.csproj",
+        "packagesPath": "C:\\Users\\zhuzh\\.nuget\\packages\\",
+        "outputPath": "F:\\博客相关资料\\文章\\wemail\\wemail\\09wemail\\src\\Wemail.Contact\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "e:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\zhuzh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0-windows7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0-windows7.0": {
+            "targetAlias": "net5.0-windows",
+            "projectReferences": {
+              "F:\\博客相关资料\\文章\\wemail\\wemail\\09wemail\\src\\Wemail.Common\\Wemail.Common.csproj": {
+                "projectPath": "F:\\博客相关资料\\文章\\wemail\\wemail\\09wemail\\src\\Wemail.Common\\Wemail.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0-windows7.0": {
+          "targetAlias": "net5.0-windows",
+          "dependencies": {
+            "Prism.Wpf": {
+              "target": "Package",
+              "version": "[8.0.0.1909, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
