@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "O4Hy0Z/3OpF6dhl9F19DYQq/jXyU+vsEXrVIH65nYM9EGOKb1nbY9jwAeQBxfejFdzX4iIyf9lLBXeElS56+Uw==",
+  "success": true,
+  "projectFilePath": "F:\\博客相关资料\\project\\wemail\\11wemail\\src\\Wemail.Mail\\Wemail.Mail.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\zhuzh\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.19\\microsoft.xaml.behaviors.wpf.1.1.19.nupkg.sha512",
+    "C:\\Users\\zhuzh\\.nuget\\packages\\prism.core\\8.0.0.1909\\prism.core.8.0.0.1909.nupkg.sha512",
+    "C:\\Users\\zhuzh\\.nuget\\packages\\prism.wpf\\8.0.0.1909\\prism.wpf.8.0.0.1909.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,119 @@
+﻿<Window x:Class="Wemail.Mail.Views.NewMailView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:prism="http://prismlibrary.com/"
+             xmlns:local="clr-namespace:Wemail.Mail.Views"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:ctrl="clr-namespace:Wemail.Controls.CustomContorls;assembly=Wemail.Controls"
+             TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+             Background="{DynamicResource MaterialDesignPaper}"
+             TextElement.FontWeight="Medium"
+             TextElement.FontSize="14"
+             FontFamily="pack://application:,,,/MaterialDesignThemes.Wpf;component/Resources/Roboto/#Roboto"
+             prism:ViewModelLocator.AutoWireViewModel="True"
+             WindowStartupLocation="CenterOwner"
+             mc:Ignorable="d"
+             Height="768" Width="1024" >
+    <Window.Resources>
+        <Style TargetType="{x:Type Button}" x:Key="formatTextStyle">
+            <Setter Property="FontFamily" Value="Palatino Linotype"></Setter>
+            <Setter Property="Width" Value="30"></Setter>
+            <Setter Property="FontSize" Value ="14"></Setter>
+            <Setter Property="CommandTarget" Value="{Binding ElementName=mainRTB}"></Setter>
+        </Style>
+        <Style TargetType="{x:Type Button}" x:Key="formatImageStyle">
+            <Setter Property="Width" Value="30"></Setter>
+            <Setter Property="CommandTarget" Value="{Binding ElementName=mainRTB}"></Setter>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="200"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <TextBlock Text="发件人："></TextBlock>
+            <TextBox Width="750" Text="{Binding MailModel.Sender.Mail}"></TextBox>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <TextBlock Text="收件人："></TextBlock>
+            <TextBox Width="750" Text="{Binding MailModel.Reciver.Mail}"></TextBox>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <TextBlock Text="抄    送："></TextBlock>
+            <TextBox Width="750" Text="{Binding MailModel.CC.Mail}"></TextBox>
+        </StackPanel>
+        <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <TextBlock Text="主    题："></TextBlock>
+            <TextBox Width="750" Text="{Binding MailModel.Subject}"></TextBox>
+        </StackPanel>
+        <Button Grid.Column="1" Height="30" Grid.RowSpan="2" Width="150" Content="发送" Command="{Binding SendCommand}"></Button>
+        <DockPanel Grid.Row="4" Name="mainPanel" Grid.ColumnSpan="2">
+            <ToolBar Name="mainToolBar" Height="30" DockPanel.Dock="Top">
+                <Button Style="{StaticResource formatImageStyle}" Command="ApplicationCommands.Cut" ToolTip="Cut">
+                    <Image Source="/Wemail.Resource;component/imgs/cut.png"></Image>
+                </Button>
+                <Button Style="{StaticResource formatImageStyle}" Command="ApplicationCommands.Copy" ToolTip="Copy">
+                    <Image Source="/Wemail.Resource;component/imgs/copy.png"></Image>
+                </Button>
+                <Button Style="{StaticResource formatImageStyle}" Command="ApplicationCommands.Paste" ToolTip="Paste">
+                    <Image Source="/Wemail.Resource;component/imgs/paste.png"></Image>
+                </Button>
+                <Button Style="{StaticResource formatImageStyle}" Command="ApplicationCommands.Undo" ToolTip="Undo">
+                    <Image Source="/Wemail.Resource;component/imgs/undo.png"></Image>
+                </Button>
+                <Button Style="{StaticResource formatImageStyle}" Command="ApplicationCommands.Redo" ToolTip="Redo">
+                    <Image Source="/Wemail.Resource;component/imgs/redo.png"></Image>
+                </Button>
+                <Button Style="{StaticResource formatTextStyle}" Command="EditingCommands.ToggleBold" ToolTip="Bold">
+                    <TextBlock Foreground="White" FontWeight="Bold">B</TextBlock>
+                </Button>
+                <Button Style="{StaticResource formatTextStyle}" Command="EditingCommands.ToggleItalic" ToolTip="Italic">
+                    <TextBlock FontStyle="Italic" Foreground="White" FontWeight="Bold">I</TextBlock>
+                </Button>
+                <Button Style="{StaticResource formatTextStyle}" Command="EditingCommands.ToggleUnderline" ToolTip="Underline">
+                    <TextBlock Foreground="White" TextDecorations="Underline" FontWeight="Bold">U</TextBlock>
+                </Button>
+                <!--<Button Style="{StaticResource formatImageStyle}" Command="EditingCommands.IncreaseFontSize" ToolTip="Grow Font">
+                </Button>
+                <Button Style="{StaticResource formatImageStyle}" Command="EditingCommands.DecreaseFontSize" ToolTip="Shrink Font">
+                </Button>
+                <Button Style="{StaticResource formatImageStyle}" Command="EditingCommands.ToggleBullets" ToolTip="Bullets">
+                </Button>
+                <Button Style="{StaticResource formatImageStyle}" Command="EditingCommands.ToggleNumbering" ToolTip="Numbering">
+                </Button>-->
+                <Button Style="{StaticResource formatImageStyle}" Command="EditingCommands.AlignLeft" ToolTip="Align Left">
+                    <Image Source="/Wemail.Resource;component/imgs/align_left.png"></Image>
+                </Button>
+                <Button Style="{StaticResource formatImageStyle}" Command="EditingCommands.AlignCenter" ToolTip="Align Center">
+                    <Image Source="/Wemail.Resource;component/imgs/align_right.png"></Image>
+                </Button>
+                <Button Style="{StaticResource formatImageStyle}" Command="EditingCommands.AlignRight" ToolTip="右对齐">
+                    <Image Source="/Wemail.Resource;component/imgs/align_right.png"></Image>
+                </Button>
+                <!--<Button Style="{StaticResource formatImageStyle}" Command="EditingCommands.AlignJustify" ToolTip="对齐">
+                </Button>-->
+                <!--<Button Style="{StaticResource formatImageStyle}" Command="EditingCommands.IncreaseIndentation" Content="增加缩进" ToolTip="Increase Indent">
+                </Button>
+                <Button Style="{StaticResource formatImageStyle}" Command="EditingCommands.DecreaseIndentation" Content="减少缩进" ToolTip="Decrease Indent">
+                </Button>-->
+            </ToolBar>
+            <RichTextBox Name="mainRTB" AcceptsTab="True" BorderThickness="1" BorderBrush="White">
+                <FlowDocument>
+                    <Paragraph>
+                        <Run Text="{Binding MailModel.Content}"/>
+                    </Paragraph>
+                </FlowDocument>
+            </RichTextBox>
+        </DockPanel>
+    </Grid>
+</Window>

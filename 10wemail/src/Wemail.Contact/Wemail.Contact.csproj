@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>Wemail.Contact</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Prism.Wpf" Version="8.0.0.1909" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Wemail.Common\Wemail.Common.csproj" />
+    <ProjectReference Include="..\Wemail.DAL\Wemail.DAL.csproj" />
+  </ItemGroup>
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="xcopy &quot;$(ProjectDir)bin\Debug\net5.0-windows\Wemail.Contact.dll&quot; &quot;F:\博客相关资料\project\wemail\10wemail\src\Wemail\bin\Debug\net5.0-windows\Apps\&quot; /Y /S" />
+  </Target>
+</Project>
