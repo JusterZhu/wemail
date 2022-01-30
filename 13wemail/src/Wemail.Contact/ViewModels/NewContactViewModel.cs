@@ -41,7 +41,7 @@ namespace Wemail.Contact.ViewModels
         {
             if (IsInvalid) return;
 
-            HttpHelper.Insert(Contact.Mail, Contact.Phone, Contact.Name, Contact.Age, Contact.Sex);
+            //HttpHelper.Insert(Contact.Mail, Contact.Phone, Contact.Name, Contact.Age, Contact.Sex);
             View.Shutdown();
         }
     }

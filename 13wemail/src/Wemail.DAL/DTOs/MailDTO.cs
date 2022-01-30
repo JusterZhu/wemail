@@ -15,6 +15,7 @@ namespace Wemail.DAL.DTOs
             CC = new ContactDTO();
         }
 
+        public int Id { get; set; }
         public string Subject { get; set; }
 
         public string Content { get; set; }

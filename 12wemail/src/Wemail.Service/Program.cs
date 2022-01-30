@@ -9,13 +9,6 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
-
 app.UseHttpsRedirection();
 
 List<MailDTO> mails = new List<MailDTO>() 
@@ -43,6 +36,22 @@ app.MapDelete("/delmail/{id}", (int id) =>
     else
     {
         resultMsg = "nothing to do !";
+    }
+    return resultMsg;
+});
+
+//Ìí¼Ómail
+app.MapPost("/addmail", (MailDTO mail) => 
+{
+    string resultMsg = string.Empty;
+    if (mail!=null)
+    {
+        mails.Add(mail);
+        resultMsg = "add mail complated .";
+    }
+    else
+    {
+        resultMsg = "fail the mail add !";
     }
     return resultMsg;
 });

@@ -13,6 +13,7 @@ using Wemail.Common.User;
 using Wemail.DAL;
 using Wemail.DAL.DTOs;
 using Wemail.Mail.Models;
+using Wemail.Mail.Services;
 using Wemail.Mail.Views;
 
 namespace Wemail.Mail.ViewModels
@@ -49,11 +50,9 @@ namespace Wemail.Mail.ViewModels
             newMailView.ShowDialog();
         }
 
-        private void SyncAction()
+        private async void SyncAction()
         {
-            Mails.Clear();
-            var mails = HttpHelper.GetMails();
-            Mails.AddRange(ConvertToModel(mails));
+            await MailService.GetMails(OnGetmailsExcptionCallback, OnGetmailsCallback);
         }
 
         public bool IsNavigationTarget(NavigationContext navigationContext)
@@ -85,11 +84,21 @@ namespace Wemail.Mail.ViewModels
             InitData();
         }
 
-        private void InitData()
+        private async void InitData()
+        {
+           await MailService.GetMails(OnGetmailsExcptionCallback,OnGetmailsCallback);
+        }
+
+        private void OnGetmailsCallback(List<MailDTO> mails)
         {
             Mails.Clear();
-            var mails = HttpHelper.GetMails();
             Mails.AddRange(ConvertToModel(mails));
+        }
+
+        private void OnGetmailsExcptionCallback(Exception exception)
+        {
+            //log.Error(exception.Message);
+            Console.WriteLine(exception.Message);
         }
 
         private List<MailModel> ConvertToModel(List<MailDTO> contacts)

@@ -525,3 +525,4 @@ F:\博客相关资料\project\wemail\13wemail\src\Wemail\obj\Debug\net5.0-window
 F:\博客相关资料\project\wemail\13wemail\src\Wemail\obj\Debug\net5.0-windows\Wemail.pdb
 F:\博客相关资料\project\wemail\13wemail\src\Wemail\obj\Debug\net5.0-windows\Wemail.genruntimeconfig.cache
 F:\博客相关资料\project\wemail\13wemail\src\Wemail\obj\Debug\net5.0-windows\ref\Wemail.dll
+F:\博客相关资料\project\wemail\13wemail\src\Wemail\bin\Debug\net5.0-windows\Newtonsoft.Json.dll

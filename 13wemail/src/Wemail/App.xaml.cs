@@ -13,6 +13,7 @@ using Wemail.Common.RegionAdapters;
 using Wemail.Common.User;
 using Wemail.Controls.CustomContorls;
 using Wemail.Controls.Views;
+using Wemail.DAL;
 using Wemail.ViewModels;
 using Wemail.Views;
 
@@ -25,6 +26,7 @@ namespace Wemail
     {
         Microsoft.Extensions.Logging.ILogger _logger;
         UserModel _user;
+        HttpHelper _httpHelper;
 
         /// <summary>
         /// 应用程序启动时创建Shell

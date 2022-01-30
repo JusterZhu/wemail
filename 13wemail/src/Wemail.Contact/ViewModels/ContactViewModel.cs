@@ -79,8 +79,8 @@ namespace Wemail.Contact.ViewModels
             Application.Current.Dispatcher.Invoke(() => 
             {
                 Contacts.Clear();
-                var contactsDTO = HttpHelper.GetContacts();
-                Contacts.AddRange(ConvertToModel(contactsDTO));
+                //var contactsDTO = HttpHelper.GetContacts();
+                //Contacts.AddRange(ConvertToModel(contactsDTO));
             });
         }
 

@@ -25,3 +25,4 @@ F:\博客相关资料\project\wemail\12wemail\src\Wemail.Service\obj\Debug\net6.
 F:\博客相关资料\project\wemail\12wemail\src\Wemail.Service\obj\Debug\net6.0\Wemail.Service.pdb
 F:\博客相关资料\project\wemail\12wemail\src\Wemail.Service\obj\Debug\net6.0\Wemail.Service.genruntimeconfig.cache
 F:\博客相关资料\project\wemail\12wemail\src\Wemail.Service\obj\Debug\net6.0\ref\Wemail.Service.dll
+F:\博客相关资料\project\wemail\12wemail\src\Wemail.Service\bin\Debug\net6.0\Newtonsoft.Json.dll

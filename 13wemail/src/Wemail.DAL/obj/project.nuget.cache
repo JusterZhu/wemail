@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "d+hF4WKAiQTT16fy6t7U9nYindN4cz7n5fDwBc03HD+wZD48t5D1dzaVskwjmQbe+cSNhU92+Mqpn1r03yfoYQ==",
+  "dgSpecHash": "Ch5UYaUMQDcIvMwogfS4V2ODH7nWQyU+t4b+HGomibtARkgmbyaBt0Kbe+4JZDUnW4op7xe1hw1D4xI5/x01vA==",
   "success": true,
   "projectFilePath": "F:\\博客相关资料\\project\\wemail\\13wemail\\src\\Wemail.DAL\\Wemail.DAL.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\zhuzh\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
   "logs": []
 }
